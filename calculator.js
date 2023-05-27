@@ -50,6 +50,12 @@ function percent(){
 }
 
 function plus(){
+    if(answer2) {
+        num1 = 0
+        num2 = 0
+        answer2 = false
+    }
+
     op = "+"
     if (num1 === 0) {
         num1 = parseFloat(inputs.innerText)
@@ -60,10 +66,15 @@ function plus(){
         num1 = num1 + num2
     }
     inputs.innerText = "0"
-
 }
 
 function minus(){
+    if(answer2) {
+        num1 = 0
+        num2 = 0
+        answer2 = false
+    }
+
     op = "-"
     if (num1 === 0) {
         num1 = parseFloat(inputs.innerText)
@@ -77,6 +88,12 @@ function minus(){
 }
 
 function times(){
+    if(answer2) {
+        num1 = 0
+        num2 = 0
+        answer2 = false
+    }
+
     op = "x"
     if (num1 === 0) {
         num1 = parseFloat(inputs.innerText)
@@ -90,6 +107,12 @@ function times(){
 }
 
 function divide(){
+    if(answer2) {
+        num1 = 0
+        num2 = 0
+        answer2 = false
+    }
+
     op = "÷"
     if (num1 === 0) {
         num1 = parseFloat(inputs.innerText)
